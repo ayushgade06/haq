@@ -1,69 +1,87 @@
-import Image from "next/image";
+import Link from "next/link";
+import { RoutePreview } from "@/components/route-preview";
+import { SampleCards } from "@/components/sample-cards";
+import { StoryInput } from "@/components/story-input";
+import { Term } from "@/components/term";
+import { STAT, STAT_SOURCE } from "@/lib/copy";
 
 export default function Home() {
+  const paused = process.env.DEMO_MODE === "true" || !process.env.ANTHROPIC_API_KEY;
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
+    <div className="mx-auto max-w-6xl px-4 sm:px-6">
+      <section className="grid items-start gap-10 pb-16 pt-6 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,0.92fr)] lg:gap-14 lg:pt-12">
+        <div className="space-y-7">
+          <div className="space-y-5">
+            <h1 className="display max-w-[16ch] text-[2.55rem] font-[760] text-foreground sm:text-[3.4rem]">
+              The money left your account and never arrived. The bank says: wait.
+            </h1>
+            <p className="max-w-[54ch] text-[1.08rem] leading-relaxed text-muted-foreground">
+              Haq tells you where to complain, when you&apos;re allowed to, the last day to file, and what the law says you&apos;re owed. Then it writes
+              the complaint. Built for India: <Term k="UPI" /> payments, cards, online shopping and insurance.
+            </p>
+          </div>
+          <StoryInput paused={paused} />
+        </div>
+        <div className="lg:pt-6">
+          <RoutePreview />
+        </div>
+      </section>
+
+      <section aria-labelledby="samples" className="border-t pt-12">
+        <div className="mb-5 flex flex-wrap items-baseline justify-between gap-2">
+          <h2 id="samples" className="text-[1.35rem] font-semibold">
+            Or open a sample case
+          </h2>
+          <p className="text-[0.88rem] text-muted-foreground">Fictional people. Opens instantly.</p>
+        </div>
+        <SampleCards />
+      </section>
+
+      <section aria-labelledby="why" className="grid gap-10 pt-20 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-14">
+        <div>
+          <h2 id="why" className="sr-only">
+            Why this matters
+          </h2>
+          <p className="display num text-[2.6rem] font-[760] leading-none sm:text-[3.4rem]">
+            7.84 <Term k="lakh" /> of 9.11 lakh
+          </p>
+          <p className="mt-4 max-w-[52ch] text-[0.95rem] leading-relaxed text-muted-foreground">
+            {STAT}{" "}
+            <a href={STAT_SOURCE} target="_blank" rel="noreferrer" className="underline underline-offset-4 hover:text-foreground">
+              Source
+            </a>
+            . Complaints get closed for procedure, not only merit: filed in the wrong place, too early, or too late. Haq checks those three things before you
             file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+        <ol className="space-y-6">
+          {[
+            ["Tell it what happened", "Type or speak, in any mix of Hindi and English."],
+            ["Check the facts", "AI pulls out the facts and shows the exact words each one came from. You fix anything that's wrong."],
+            [
+              "Get your route",
+              "Rules written from official sources, not AI, decide where to go, when, and what you're owed. Every step links to its source. Then Haq writes the complaint; you file it.",
+            ],
+          ].map(([title, body], i) => (
+            <li key={title} className="grid grid-cols-[2.5rem_1fr] gap-3">
+              <span className="display num text-[1.6rem] font-[700] text-primary/70">{i + 1}</span>
+              <div>
+                <h3 className="text-[1.08rem] font-semibold">{title}</h3>
+                <p className="mt-1 text-[0.95rem] leading-relaxed text-muted-foreground">{body}</p>
+              </div>
+            </li>
+          ))}
+          <li className="pl-[2.75rem] text-[0.92rem]">
+            <Link href="/how-it-works" className="font-semibold text-primary underline underline-offset-4">
+              How Haq works
+            </Link>{" "}
+            <span className="text-muted-foreground">or</span>{" "}
+            <Link href="/rules" className="font-semibold text-primary underline underline-offset-4">
+              read every rule it uses
+            </Link>
+          </li>
+        </ol>
+      </section>
     </div>
   );
 }

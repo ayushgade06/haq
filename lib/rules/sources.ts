@@ -1,5 +1,5 @@
-﻿// Every rule the engine applies. Only values marked V (verified on an official page or PDF) or
-// S (secondary source quoting the official text) in BLUEPRINT Â§7.4 live here. /rules renders this file.
+// Every rule the engine applies. Only values marked V (verified on an official page or PDF) or
+// S (secondary source quoting the official text) in BLUEPRINT §7.4 live here. /rules renders this file.
 
 export type Rule = {
   id: string;
@@ -30,7 +30,7 @@ const TAT_FROM = "2019-10-15";
 const IO_FROM = "2017-04-25";
 
 export const RULES = [
-  // â”€â”€ RBI Integrated Ombudsman Scheme 2026 (in force 1 Jul 2026) â”€â”€
+  // ── RBI Integrated Ombudsman Scheme 2026 (in force 1 Jul 2026) ──
   {
     id: "rbios.approach_first",
     summary:
@@ -64,7 +64,7 @@ export const RULES = [
   {
     id: "rbios.covered",
     summary:
-      "Covers commercial banks, regional rural banks, co-operative banks (above size limits), deposit-taking or customer-facing NBFCs with assets of â‚¹100 crore or more (some exclusions), non-bank wallet and prepaid-card issuers, and credit information companies.",
+      "Covers commercial banks, regional rural banks, co-operative banks (above size limits), deposit-taking or customer-facing NBFCs with assets of ₹100 crore or more (some exclusions), non-bank wallet and prepaid-card issuers, and credit information companies.",
     value: "Banks, larger NBFCs, wallets, credit bureaus",
     law: "RBI Integrated Ombudsman Scheme 2026",
     sourceUrl: RBIOS,
@@ -74,8 +74,8 @@ export const RULES = [
   {
     id: "rbios.awards",
     summary:
-      "No limit on the disputed amount. The Ombudsman can also award up to â‚¹30 lakh for consequential loss, and up to â‚¹3 lakh for lost time, expenses and harassment.",
-    value: "No cap on the disputed amount; up to â‚¹30 lakh + â‚¹3 lakh",
+      "No limit on the disputed amount. The Ombudsman can also award up to ₹30 lakh for consequential loss, and up to ₹3 lakh for lost time, expenses and harassment.",
+    value: "No cap on the disputed amount; up to ₹30 lakh + ₹3 lakh",
     law: "RBI Integrated Ombudsman Scheme 2026",
     sourceUrl: RBIOS,
     effectiveFrom: RBIOS_FROM,
@@ -84,7 +84,7 @@ export const RULES = [
   {
     id: "rbios.portal",
     summary: "File online at cms.rbi.org.in, or call RBI's toll-free number 14448.",
-    value: "cms.rbi.org.in Â· 14448",
+    value: "cms.rbi.org.in · 14448",
     law: "RBI Integrated Ombudsman Scheme 2026",
     sourceUrl: RBIOS,
     effectiveFrom: RBIOS_FROM,
@@ -100,13 +100,13 @@ export const RULES = [
     status: "V",
   },
 
-  // â”€â”€ Failed transactions: turnaround time (TAT) and automatic compensation, RBI/2019-20/67 â”€â”€
+  // ── Failed transactions: turnaround time (TAT) and automatic compensation, RBI/2019-20/67 ──
   // T = transaction date. Compensation is paid "suo moto": the bank must pay without being asked.
   {
     id: "tat.atm",
     summary:
-      "ATM or micro-ATM: money debited but no cash came out. It must be reversed within 5 days (T+5). After that, the bank owes you â‚¹100 for every day of delay, without you asking.",
-    value: "T+5 Â· then â‚¹100/day",
+      "ATM or micro-ATM: money debited but no cash came out. It must be reversed within 5 days (T+5). After that, the bank owes you ₹100 for every day of delay, without you asking.",
+    value: "T+5 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -114,8 +114,8 @@ export const RULES = [
   },
   {
     id: "tat.card_to_card",
-    summary: "Card-to-card transfer: debited but not credited. Fix within 1 day (T+1); then â‚¹100 per day of delay.",
-    value: "T+1 Â· then â‚¹100/day",
+    summary: "Card-to-card transfer: debited but not credited. Fix within 1 day (T+1); then ₹100 per day of delay.",
+    value: "T+1 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -124,8 +124,8 @@ export const RULES = [
   {
     id: "tat.pos",
     summary:
-      "Card used at a shop's machine (PoS): debited but the shop didn't get the money. Reverse within 5 days (T+5); then â‚¹100 per day of delay.",
-    value: "T+5 Â· then â‚¹100/day",
+      "Card used at a shop's machine (PoS): debited but the shop didn't get the money. Reverse within 5 days (T+5); then ₹100 per day of delay.",
+    value: "T+5 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -134,8 +134,8 @@ export const RULES = [
   {
     id: "tat.card_not_present",
     summary:
-      "Card used online: debited but the merchant didn't get the money. Reverse within 5 days (T+5); then â‚¹100 per day of delay.",
-    value: "T+5 Â· then â‚¹100/day",
+      "Card used online: debited but the merchant didn't get the money. Reverse within 5 days (T+5); then ₹100 per day of delay.",
+    value: "T+5 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -144,8 +144,8 @@ export const RULES = [
   {
     id: "tat.imps",
     summary:
-      "IMPS (instant bank transfer): debited but the receiver wasn't credited. Fix within 1 day (T+1); then â‚¹100 per day of delay.",
-    value: "T+1 Â· then â‚¹100/day",
+      "IMPS (instant bank transfer): debited but the receiver wasn't credited. Fix within 1 day (T+1); then ₹100 per day of delay.",
+    value: "T+1 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -154,8 +154,8 @@ export const RULES = [
   {
     id: "tat.upi_p2p",
     summary:
-      "UPI (India's instant-payment system) to a person: debited but they weren't credited. Fix within 1 day (T+1); after that the bank owes you â‚¹100 for every day of delay, without you asking.",
-    value: "T+1 Â· then â‚¹100/day",
+      "UPI (India's instant-payment system) to a person: debited but they weren't credited. Fix within 1 day (T+1); after that the bank owes you ₹100 for every day of delay, without you asking.",
+    value: "T+1 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -164,8 +164,8 @@ export const RULES = [
   {
     id: "tat.upi_merchant",
     summary:
-      "UPI to a shop or website: debited but the merchant didn't confirm. Reverse within 5 days (T+5); then â‚¹100 per day of delay.",
-    value: "T+5 Â· then â‚¹100/day",
+      "UPI to a shop or website: debited but the merchant didn't confirm. Reverse within 5 days (T+5); then ₹100 per day of delay.",
+    value: "T+5 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
@@ -174,20 +174,20 @@ export const RULES = [
   {
     id: "tat.wallet",
     summary:
-      "Wallet or prepaid payment on the wallet's own network failed. Fix within 1 day (T+1); then â‚¹100 per day of delay.",
-    value: "T+1 Â· then â‚¹100/day",
+      "Wallet or prepaid payment on the wallet's own network failed. Fix within 1 day (T+1); then ₹100 per day of delay.",
+    value: "T+1 · then ₹100/day",
     law: "RBI circular RBI/2019-20/67 on failed transactions",
     sourceUrl: TAT,
     effectiveFrom: TAT_FROM,
     status: "V",
   },
 
-  // â”€â”€ Unauthorised electronic transactions: customer liability â”€â”€
+  // ── Unauthorised electronic transactions: customer liability ──
   {
     id: "fraud2017.zero",
     summary:
       "For unauthorised transactions dated before 1 Jan 2027: you lose nothing if you report within 3 working days of the bank's alert, when the fraud was someone else's doing (not yours or the bank's). If the bank was at fault, you lose nothing at all.",
-    value: "Report within 3 working days â†’ zero liability",
+    value: "Report within 3 working days → zero liability",
     law: "RBI circular RBI/2017-18/15 on customer liability",
     sourceUrl: FRAUD_2017,
     effectiveFrom: "2017-07-06",
@@ -197,8 +197,8 @@ export const RULES = [
   {
     id: "fraud2017.limited",
     summary:
-      "Reported on working day 4 to 7: your loss is capped at the lower of the transaction amount and â‚¹5,000 (basic savings/BSBD account); â‚¹10,000 (most savings accounts, wallets and prepaid cards, credit cards with a limit up to â‚¹5 lakh); or â‚¹25,000 (other accounts).",
-    value: "Working days 4â€“7 â†’ â‚¹5,000 / â‚¹10,000 / â‚¹25,000 cap",
+      "Reported on working day 4 to 7: your loss is capped at the lower of the transaction amount and ₹5,000 (basic savings/BSBD account); ₹10,000 (most savings accounts, wallets and prepaid cards, credit cards with a limit up to ₹5 lakh); or ₹25,000 (other accounts).",
+    value: "Working days 4–7 → ₹5,000 / ₹10,000 / ₹25,000 cap",
     law: "RBI circular RBI/2017-18/15 on customer liability",
     sourceUrl: FRAUD_2017,
     effectiveFrom: "2017-07-06",
@@ -220,7 +220,7 @@ export const RULES = [
     id: "fraud2027.zero",
     summary:
       "For unauthorised transactions dated on or after 1 Jan 2027: you lose nothing if you report within 5 calendar days.",
-    value: "Report within 5 calendar days â†’ zero liability",
+    value: "Report within 5 calendar days → zero liability",
     law: "RBI circular RBI/2026-27/167 on customer liability",
     sourceUrl: FRAUD_2027,
     effectiveFrom: "2027-01-01",
@@ -238,15 +238,15 @@ export const RULES = [
   {
     id: "fraud2027.small_value",
     summary:
-      "Small frauds (loss up to â‚¹50,000): you can get back the lower of 85% of the loss and â‚¹25,000, once in your lifetime, if you report to 1930 or cybercrime.gov.in and to your bank within 5 days.",
-    value: "85% of the loss, max â‚¹25,000, once per lifetime",
+      "Small frauds (loss up to ₹50,000): you can get back the lower of 85% of the loss and ₹25,000, once in your lifetime, if you report to 1930 or cybercrime.gov.in and to your bank within 5 days.",
+    value: "85% of the loss, max ₹25,000, once per lifetime",
     law: "RBI circular RBI/2026-27/167 on customer liability",
     sourceUrl: FRAUD_2027,
     effectiveFrom: "2027-01-01",
     status: "V",
   },
 
-  // â”€â”€ Consumer goods, services and e-commerce â”€â”€
+  // ── Consumer goods, services and e-commerce ──
   {
     id: "ecom.grievance",
     summary:
@@ -262,7 +262,7 @@ export const RULES = [
     id: "nch.helpline",
     summary:
       "National Consumer Helpline (NCH): free and optional. It takes up your complaint with the company before you go to a commission. Call 1915 or 1800-11-4000, WhatsApp +91 8800001915, or use consumerhelpline.gov.in.",
-    value: "1915 Â· WhatsApp +91 8800001915",
+    value: "1915 · WhatsApp +91 8800001915",
     law: "National Consumer Helpline, Department of Consumer Affairs",
     sourceUrl: "https://consumerhelpline.gov.in",
     effectiveFrom: LAST_VERIFIED,
@@ -281,8 +281,8 @@ export const RULES = [
   {
     id: "cpa.commission_tiers",
     summary:
-      "Which commission hears your case depends on what you paid: up to â‚¹50 lakh â†’ District; above â‚¹50 lakh up to â‚¹2 crore â†’ State; above â‚¹2 crore â†’ National.",
-    value: "â‰¤ â‚¹50 lakh District Â· â‰¤ â‚¹2 crore State Â· above National",
+      "Which commission hears your case depends on what you paid: up to ₹50 lakh → District; above ₹50 lakh up to ₹2 crore → State; above ₹2 crore → National.",
+    value: "≤ ₹50 lakh District · ≤ ₹2 crore State · above National",
     law: "Consumer Protection (Jurisdiction) Rules 2021, G.S.R. 912(E)",
     sourceUrl: TIERS,
     effectiveFrom: "2021-12-30",
@@ -291,8 +291,8 @@ export const RULES = [
   {
     id: "cpa.fee",
     summary:
-      "Filing fee, by the amount you paid: nil up to â‚¹5 lakh; â‚¹200 (â‚¹5â€“10 lakh); â‚¹400 (â‚¹10â€“20 lakh); â‚¹1,000 (â‚¹20â€“50 lakh). Above â‚¹50 lakh, see the official schedule.",
-    value: "Nil up to â‚¹5 lakh",
+      "Filing fee, by the amount you paid: nil up to ₹5 lakh; ₹200 (₹5–10 lakh); ₹400 (₹10–20 lakh); ₹1,000 (₹20–50 lakh). Above ₹50 lakh, see the official schedule.",
+    value: "Nil up to ₹5 lakh",
     law: "Consumer commission filing-fee notification G.S.R. 606(E), 2023",
     sourceUrl: FEES,
     effectiveFrom: "2023-08-17",
@@ -308,7 +308,7 @@ export const RULES = [
     status: "V",
   },
 
-  // â”€â”€ Insurance: Insurance Ombudsman Rules 2017, as amended â”€â”€
+  // ── Insurance: Insurance Ombudsman Rules 2017, as amended ──
   {
     id: "io.approach_first",
     summary:
@@ -331,8 +331,8 @@ export const RULES = [
   },
   {
     id: "io.max_award",
-    summary: "The Insurance Ombudsman can award up to â‚¹50 lakh.",
-    value: "â‚¹50 lakh",
+    summary: "The Insurance Ombudsman can award up to ₹50 lakh.",
+    value: "₹50 lakh",
     law: "Insurance Ombudsman Rules 2017 (as amended)",
     sourceUrl: CIOINS,
     effectiveFrom: IO_FROM,
@@ -342,7 +342,7 @@ export const RULES = [
     // Contact details: effectiveFrom is the date we last checked them.
     id: "io.bima_bharosa",
     summary: "You can also escalate on IRDAI's Bima Bharosa portal (bimabharosa.irdai.gov.in) or call 155255.",
-    value: "bimabharosa.irdai.gov.in Â· 155255",
+    value: "bimabharosa.irdai.gov.in · 155255",
     law: "IRDAI Bima Bharosa",
     sourceUrl: "https://bimabharosa.irdai.gov.in",
     effectiveFrom: LAST_VERIFIED,
