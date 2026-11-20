@@ -1,0 +1,26 @@
+{
+  "id": "b06-card-pos-verbal",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "Five days ago, on Sunday, I filled petrol at a pump near my house and paid with my Sahyog Bank debit card. The machine printed 'declined', so I paid again in cash, but the card amount was still taken from my account. The next day I went to my home branch and explained everything to the officer at the desk. She told me to wait. Nothing has come back yet.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Sahyog Bank",
+    "entityType": "bank",
+    "txnType": "card_present",
+    "problem": "failed_credit",
+    "amountInr": null,
+    "txnDate": "2026-11-15",
+    "complainedToEntity": true,
+    "complaintMode": "verbal",
+    "complaintDate": "2026-11-16",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": ["amountInr"]
+}

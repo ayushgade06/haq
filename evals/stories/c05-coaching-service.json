@@ -1,0 +1,26 @@
+{
+  "id": "c05-coaching-service",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "I paid ₹18,000 upfront to BrightPath Coaching Centre for a six-month bank-exam batch. After the first month the main teacher left, classes became irregular, and for the last three weeks the centre has been locked. Many of us paid the full fee. I haven't complained to them yet; I'm not sure it will help. I want my full ₹18,000 back for classes that were never held.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "BrightPath Coaching Centre",
+    "entityType": "service",
+    "txnType": "purchase",
+    "problem": "service",
+    "amountInr": 18000,
+    "txnDate": null,
+    "complainedToEntity": false,
+    "complaintMode": "none",
+    "complaintDate": null,
+    "entityResponse": null,
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": ["txnDate"]
+}

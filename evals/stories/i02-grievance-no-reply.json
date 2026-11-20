@@ -1,0 +1,26 @@
+{
+  "id": "i02-grievance-no-reply",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "My mother's cataract surgery claim of ₹48,500 with Suraksha Health Insurance was rejected on 22 September as 'not medically necessary'. On 1 October I emailed their grievance officer with the doctor's notes and the discharge summary. Apart from an auto-acknowledgement, I've heard nothing in seven weeks. We paid the hospital ourselves and I'm tired of waiting.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Suraksha Health Insurance",
+    "entityType": "insurer",
+    "txnType": "claim",
+    "problem": "claim_rejected",
+    "amountInr": 48500,
+    "txnDate": "2026-09-22",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-10-01",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "INSURANCE",
+  "currentStatus": "file_by",
+  "deliberatelyMissing": []
+}

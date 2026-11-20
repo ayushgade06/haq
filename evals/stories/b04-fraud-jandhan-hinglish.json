@@ -1,0 +1,26 @@
+{
+  "id": "b04-fraud-jandhan-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "Mera Jan Dhan account Bharat National Bank mein hai. Kal raat 11 baje SMS aaya ki Rs 4,200 debit hue hain. Maine koi payment nahi kiya, na kisi ko OTP diya. Aaj subah hi bank ke app mein 'Report fraud' wala form bhar diya aur complaint number mil gaya. Paisa abhi tak wapas nahi aaya. Itne paise mere liye bahut hain.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Bharat National Bank",
+    "entityType": "bank",
+    "txnType": null,
+    "problem": "unauthorised",
+    "amountInr": 4200,
+    "txnDate": "2026-11-19",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-11-20",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": "bsbd"
+  },
+  "track": "BANKING",
+  "currentStatus": "waiting",
+  "deliberatelyMissing": []
+}

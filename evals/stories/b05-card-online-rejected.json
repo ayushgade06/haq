@@ -1,0 +1,26 @@
+{
+  "id": "b05-card-online-rejected",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "On 12 September I paid ₹8,640 by debit card on a travel website for train tickets. The money was debited from my Bharat National Bank account but the booking failed and the site says it never received the payment. I raised a complaint through the bank's website on 15 September. On 3 October they emailed back saying the transaction was successful and closed my complaint. The money is still not back.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Bharat National Bank",
+    "entityType": "bank",
+    "txnType": "card_online",
+    "problem": "failed_credit",
+    "amountInr": 8640,
+    "txnDate": "2026-09-12",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-09-15",
+    "entityResponse": "rejected",
+    "entityResponseDate": "2026-10-03",
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "file_by",
+  "deliberatelyMissing": []
+}

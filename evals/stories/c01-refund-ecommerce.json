@@ -1,0 +1,26 @@
+{
+  "id": "c01-refund-ecommerce",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "I ordered a pair of running shoes on QuickCart on 3 October for ₹2,749 and cancelled two days later, before it shipped. The app showed 'Refund initiated, will reach in 5-7 days'. It never came. I opened a support chat on 14 October and again last week; each time the agent says the refund is 'being processed'. Over a month has gone by and my bank account shows nothing.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "QuickCart",
+    "entityType": "ecommerce",
+    "txnType": "purchase",
+    "problem": "refund",
+    "amountInr": 2749,
+    "txnDate": "2026-10-03",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-10-14",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "file_by",
+  "deliberatelyMissing": []
+}

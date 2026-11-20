@@ -1,0 +1,26 @@
+{
+  "id": "b08-kyc-scam-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "3 hafte pehle ek call aaya, bola KYC update karna hai warna account band ho jayega. Maine unke bheje link pe click kiya aur Google Pay pe ek request approve kar di. Mere Kaveri Bank account se Rs 15,000 chale gaye. Usi din bank ko email kiya aur cyber crime portal pe bhi complaint daali. Bank ne reply kiya 'we are looking into it'. Ab tak paisa wapas nahi aaya.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Kaveri Bank",
+    "entityType": "bank",
+    "txnType": "upi",
+    "problem": "unauthorised",
+    "amountInr": 15000,
+    "txnDate": "2026-10-30",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-10-30",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "waiting",
+  "deliberatelyMissing": []
+}

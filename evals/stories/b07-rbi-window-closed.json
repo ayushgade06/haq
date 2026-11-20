@@ -1,0 +1,26 @@
+{
+  "id": "b07-rbi-window-closed",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "On 14 February 2026, ₹32,000 left my father's Bharat National Bank account through net banking transfers he never made. I wrote to the branch manager on 16 February and emailed the bank's grievance cell the same day. No one ever replied and the money never came back. Then Papa had his heart surgery and we forgot about it. Now my cousin says RBI can help. Is it too late?",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Bharat National Bank",
+    "entityType": "bank",
+    "txnType": "netbanking",
+    "problem": "unauthorised",
+    "amountInr": 32000,
+    "txnDate": "2026-02-14",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-02-16",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "file_by",
+  "deliberatelyMissing": []
+}

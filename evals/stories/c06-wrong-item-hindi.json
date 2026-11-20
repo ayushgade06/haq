@@ -1,0 +1,26 @@
+{
+  "id": "c06-wrong-item-hindi",
+  "lang": "hi",
+  "today": "2026-11-20",
+  "story": "मैंने 6 नवंबर को DukaanDirect ऐप से ₹1,899 का प्रेशर कुकर मंगवाया था। 12 नवंबर को जो डिब्बा आया, उसमें कुकर की जगह एक पुरानी स्टील की कटोरी थी। उसी दिन मैंने ऐप में शिकायत दर्ज की और फ़ोटो भी डालीं। जवाब आया कि 'आपकी शिकायत पर काम चल रहा है'। अभी तक न नया कुकर आया है, न पैसे वापस।",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "DukaanDirect",
+    "entityType": "ecommerce",
+    "txnType": "purchase",
+    "problem": "defective",
+    "amountInr": 1899,
+    "txnDate": "2026-11-06",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-11-12",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "waiting",
+  "deliberatelyMissing": []
+}

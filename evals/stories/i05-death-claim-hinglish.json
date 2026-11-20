@@ -1,0 +1,26 @@
+{
+  "id": "i05-death-claim-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "Papa ki death ke baad maine 8 July ko Amrit Life Insurance mein Rs 5 lakh ka death claim file kiya tha. 4 mahine ho gaye, abhi tak settle nahi hua. 3 November ko main khud unke branch office gaya, wahan bole 'documents verify ho rahe hain, wait karo'. Koi likhit jawab nahi diya. Ghar ka kharcha chalana mushkil ho raha hai.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Amrit Life Insurance",
+    "entityType": "insurer",
+    "txnType": "claim",
+    "problem": "claim_rejected",
+    "amountInr": 500000,
+    "txnDate": "2026-07-08",
+    "complainedToEntity": true,
+    "complaintMode": "verbal",
+    "complaintDate": "2026-11-03",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "INSURANCE",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": []
+}

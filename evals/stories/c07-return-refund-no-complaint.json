@@ -1,0 +1,26 @@
+{
+  "id": "c07-return-refund-no-complaint",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "I bought a jacket on QuickCart on 18 October for ₹1,250. It didn't fit, so I returned it and the courier picked it up on 1 November. I have the pickup receipt. The app said the refund would be credited within a week of pickup. It's the 20th today and still nothing. I haven't contacted them yet, I just keep checking the app. Should I complain or wait?",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "QuickCart",
+    "entityType": "ecommerce",
+    "txnType": "purchase",
+    "problem": "refund",
+    "amountInr": 1250,
+    "txnDate": "2026-10-18",
+    "complainedToEntity": false,
+    "complaintMode": "none",
+    "complaintDate": null,
+    "entityResponse": null,
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": []
+}

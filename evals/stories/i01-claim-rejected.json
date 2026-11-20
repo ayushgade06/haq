@@ -1,0 +1,26 @@
+{
+  "id": "i01-claim-rejected",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "My car was hit from behind at a signal in Nagpur in September. Repairs at the authorised garage came to ₹63,400. I filed a claim with SafeLife Insurance, but on 30 October they rejected it, saying my driving licence had expired. It was renewed two weeks before the accident and I have the receipt. I haven't written to their grievance team yet. What should I do?",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "SafeLife Insurance",
+    "entityType": "insurer",
+    "txnType": "claim",
+    "problem": "claim_rejected",
+    "amountInr": 63400,
+    "txnDate": "2026-10-30",
+    "complainedToEntity": false,
+    "complaintMode": "none",
+    "complaintDate": null,
+    "entityResponse": null,
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "INSURANCE",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": []
+}

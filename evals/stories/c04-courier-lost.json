@@ -1,0 +1,26 @@
+{
+  "id": "c04-courier-lost",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "I paid at the FastTrack Couriers counter to send my daughter's winter clothes and some books to her hostel in Shimla. The tracking said 'in transit' for weeks and now it shows 'shipment not found'. I emailed their support twice and only got automatic replies with a ticket number. The counter staff just shrug. My daughter is freezing up there and nobody will tell me where the parcel is.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "FastTrack Couriers",
+    "entityType": "service",
+    "txnType": "purchase",
+    "problem": "service",
+    "amountInr": null,
+    "txnDate": null,
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": null,
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": ["amountInr", "txnDate", "complaintDate"]
+}

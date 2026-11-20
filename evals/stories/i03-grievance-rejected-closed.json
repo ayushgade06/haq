@@ -1,0 +1,26 @@
+{
+  "id": "i03-grievance-rejected-closed",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "My bike was stolen outside my office and I claimed ₹72,000 from Raksha General Insurance. They rejected the claim on 14 April 2025 because I had reported the theft late. I wrote a formal complaint to their grievance cell on 2 May 2025, and on 30 May 2025 they replied that the rejection stands. I let it go at the time, but it still feels unfair. Can I still do something?",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Raksha General Insurance",
+    "entityType": "insurer",
+    "txnType": "claim",
+    "problem": "claim_rejected",
+    "amountInr": 72000,
+    "txnDate": "2025-04-14",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2025-05-02",
+    "entityResponse": "rejected",
+    "entityResponseDate": "2025-05-30",
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "INSURANCE",
+  "currentStatus": null,
+  "deliberatelyMissing": []
+}

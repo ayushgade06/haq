@@ -1,0 +1,26 @@
+{
+  "id": "c02-defective-marketplace",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "Bought a mixer grinder for ₹4,299 from ShopKart on 28 October. It arrived on time but the motor started smoking the very first time I used it. I raised a return request in the ShopKart app on 1 November with photos and a video. On 6 November they rejected it, saying 'physical damage by customer'. I did nothing wrong! Now I'm stuck with a burnt mixer and no refund.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "ShopKart",
+    "entityType": "ecommerce",
+    "txnType": "purchase",
+    "problem": "defective",
+    "amountInr": 4299,
+    "txnDate": "2026-10-28",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-11-01",
+    "entityResponse": "rejected",
+    "entityResponseDate": "2026-11-06",
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "file_by",
+  "deliberatelyMissing": []
+}

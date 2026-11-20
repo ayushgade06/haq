@@ -1,0 +1,26 @@
+{
+  "id": "b02-imps-written",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "On 2 November I sent ₹25,000 by IMPS from my Bharat National Bank app to my son's hostel account in Pune. The amount left my account the same evening but never reached his. I emailed the bank's customer care on 4 November with the transaction reference. Their reply said 'your complaint is under process, please wait'. It's been over two weeks and the money is neither credited to him nor reversed to me.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Bharat National Bank",
+    "entityType": "bank",
+    "txnType": "imps",
+    "problem": "failed_credit",
+    "amountInr": 25000,
+    "txnDate": "2026-11-02",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-11-04",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "waiting",
+  "deliberatelyMissing": []
+}

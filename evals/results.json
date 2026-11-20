@@ -1,0 +1,331 @@
+{
+  "ranAt": "2026-11-20T18:07:50.775Z",
+  "model": "claude-opus-5-5",
+  "effort": "medium",
+  "stories": 20,
+  "groups": [
+    {
+      "name": "Entity & transaction type",
+      "fields": "entityType, txnType, problem",
+      "score": 1,
+      "threshold": 0.9
+    },
+    {
+      "name": "Dates & amounts",
+      "fields": "amountInr, txnDate, complaintDate",
+      "score": 1,
+      "threshold": 0.85
+    },
+    {
+      "name": "Complaint in writing?",
+      "fields": "complaintMode",
+      "score": 1,
+      "threshold": null
+    }
+  ],
+  "perField": [
+    {
+      "field": "entityName",
+      "score": 1
+    },
+    {
+      "field": "entityType",
+      "score": 1
+    },
+    {
+      "field": "txnType",
+      "score": 1
+    },
+    {
+      "field": "problem",
+      "score": 1
+    },
+    {
+      "field": "amountInr",
+      "score": 1
+    },
+    {
+      "field": "txnDate",
+      "score": 1
+    },
+    {
+      "field": "complainedToEntity",
+      "score": 1
+    },
+    {
+      "field": "complaintMode",
+      "score": 1
+    },
+    {
+      "field": "complaintDate",
+      "score": 1
+    },
+    {
+      "field": "entityResponse",
+      "score": 0.95
+    },
+    {
+      "field": "entityResponseDate",
+      "score": 0.95
+    },
+    {
+      "field": "reversed",
+      "score": 1
+    },
+    {
+      "field": "reversedDate",
+      "score": 1
+    },
+    {
+      "field": "accountType",
+      "score": 1
+    }
+  ],
+  "eval2": {
+    "proposed": 201,
+    "droppedBeforeShowing": 0,
+    "preVerificationRate": 0,
+    "shownUnverifiable": 0
+  },
+  "eval3": {
+    "fields": 8,
+    "returnedNull": 8,
+    "score": 1
+  },
+  "eval4": {
+    "correct": 20,
+    "total": 20,
+    "threshold": 18
+  },
+  "latencyMs": {
+    "p50": 5172,
+    "p95": 7210
+  },
+  "costUsd": 0.44634799999999997,
+  "perStory": [
+    {
+      "id": "b01-upi-hinglish",
+      "lang": "hinglish",
+      "track": "BANKING",
+      "expectedStatus": "do_now",
+      "gotTrack": "BANKING",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b02-imps-written",
+      "lang": "en",
+      "track": "BANKING",
+      "expectedStatus": "waiting",
+      "gotTrack": "BANKING",
+      "gotStatus": "waiting",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b03-atm-hinglish",
+      "lang": "hinglish",
+      "track": "BANKING",
+      "expectedStatus": "do_now",
+      "gotTrack": "BANKING",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b04-fraud-jandhan-hinglish",
+      "lang": "hinglish",
+      "track": "BANKING",
+      "expectedStatus": "waiting",
+      "gotTrack": "BANKING",
+      "gotStatus": "waiting",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b05-card-online-rejected",
+      "lang": "en",
+      "track": "BANKING",
+      "expectedStatus": "file_by",
+      "gotTrack": "BANKING",
+      "gotStatus": "file_by",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b06-card-pos-verbal",
+      "lang": "en",
+      "track": "BANKING",
+      "expectedStatus": "do_now",
+      "gotTrack": "BANKING",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b07-rbi-window-closed",
+      "lang": "en",
+      "track": "BANKING",
+      "expectedStatus": "file_by",
+      "gotTrack": "BANKING",
+      "gotStatus": "file_by",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "b08-kyc-scam-hinglish",
+      "lang": "hinglish",
+      "track": "BANKING",
+      "expectedStatus": "waiting",
+      "gotTrack": "BANKING",
+      "gotStatus": "waiting",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c01-refund-ecommerce",
+      "lang": "en",
+      "track": "CONSUMER",
+      "expectedStatus": "file_by",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "file_by",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c02-defective-marketplace",
+      "lang": "en",
+      "track": "CONSUMER",
+      "expectedStatus": "file_by",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "file_by",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c03-local-shop-hinglish",
+      "lang": "hinglish",
+      "track": "CONSUMER",
+      "expectedStatus": "do_now",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": [
+        "entityResponse: expected \"unsatisfactory\", got \"rejected\""
+      ]
+    },
+    {
+      "id": "c04-courier-lost",
+      "lang": "en",
+      "track": "CONSUMER",
+      "expectedStatus": "do_now",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c05-coaching-service",
+      "lang": "en",
+      "track": "CONSUMER",
+      "expectedStatus": "do_now",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c06-wrong-item-hindi",
+      "lang": "hi",
+      "track": "CONSUMER",
+      "expectedStatus": "waiting",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "waiting",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "c07-return-refund-no-complaint",
+      "lang": "en",
+      "track": "CONSUMER",
+      "expectedStatus": "do_now",
+      "gotTrack": "CONSUMER",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "i01-claim-rejected",
+      "lang": "en",
+      "track": "INSURANCE",
+      "expectedStatus": "do_now",
+      "gotTrack": "INSURANCE",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "i02-grievance-no-reply",
+      "lang": "en",
+      "track": "INSURANCE",
+      "expectedStatus": "file_by",
+      "gotTrack": "INSURANCE",
+      "gotStatus": "file_by",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "i03-grievance-rejected-closed",
+      "lang": "en",
+      "track": "INSURANCE",
+      "expectedStatus": null,
+      "gotTrack": "INSURANCE",
+      "gotStatus": null,
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "i04-travel-claim-cut",
+      "lang": "en",
+      "track": "INSURANCE",
+      "expectedStatus": "waiting",
+      "gotTrack": "INSURANCE",
+      "gotStatus": "waiting",
+      "endToEnd": true,
+      "error": null,
+      "misses": []
+    },
+    {
+      "id": "i05-death-claim-hinglish",
+      "lang": "hinglish",
+      "track": "INSURANCE",
+      "expectedStatus": "do_now",
+      "gotTrack": "INSURANCE",
+      "gotStatus": "do_now",
+      "endToEnd": true,
+      "error": null,
+      "misses": [
+        "entityResponseDate: expected null, got \"2026-11-03\""
+      ]
+    }
+  ]
+}

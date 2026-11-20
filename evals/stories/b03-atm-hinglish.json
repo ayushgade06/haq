@@ -1,0 +1,26 @@
+{
+  "id": "b03-atm-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "Apne Kaveri Bank ke ATM se Rs 10,000 nikalne gaya tha. Machine ne paise count kiye, awaaz bhi aayi, lekin cash bahar nahi aaya aur screen pe 'transaction declined' aa gaya. Phir bhi account se poore 10,000 kat gaye. Agle din branch jaake manager ko bataya, unhone bola 7 din mein auto reverse ho jayega. Abhi tak kuch wapas nahi aaya, bahut tension hai.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Kaveri Bank",
+    "entityType": "bank",
+    "txnType": "atm",
+    "problem": "no_cash",
+    "amountInr": 10000,
+    "txnDate": null,
+    "complainedToEntity": true,
+    "complaintMode": "verbal",
+    "complaintDate": null,
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": ["txnDate", "complaintDate"]
+}

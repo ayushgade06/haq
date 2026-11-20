@@ -1,0 +1,26 @@
+{
+  "id": "b01-upi-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "Bhai 10 din pehle maine PhonePe se apne landlord ko Rs 7,500 rent bheja. Sahyog Bank wale account se paise kat gaye, SMS bhi aaya, lekin landlord bol raha hai usko kuch nahi mila. App mein abhi tak 'pending' dikha raha hai aur paisa wapas bhi nahi aaya. Maine abhi tak bank ko koi complaint nahi kiya, samajh nahi aa raha kahan karun.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Sahyog Bank",
+    "entityType": "bank",
+    "txnType": "upi",
+    "problem": "failed_credit",
+    "amountInr": 7500,
+    "txnDate": "2026-11-10",
+    "complainedToEntity": false,
+    "complaintMode": "none",
+    "complaintDate": null,
+    "entityResponse": null,
+    "entityResponseDate": null,
+    "reversed": false,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "BANKING",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": []
+}

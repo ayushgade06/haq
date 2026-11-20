@@ -1,0 +1,26 @@
+{
+  "id": "i04-travel-claim-cut",
+  "lang": "en",
+  "today": "2026-11-20",
+  "story": "My travel insurance claim with Kavach General Insurance for a cancelled Dubai trip was settled on 2 November, but they paid only a small part of what I claimed and deducted the rest as 'non-payable charges' without saying which. I sent a detailed complaint through their online grievance form two weeks ago. They acknowledged it with a ticket number and have said nothing since.",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Kavach General Insurance",
+    "entityType": "insurer",
+    "txnType": "claim",
+    "problem": "claim_rejected",
+    "amountInr": null,
+    "txnDate": "2026-11-02",
+    "complainedToEntity": true,
+    "complaintMode": "written",
+    "complaintDate": "2026-11-06",
+    "entityResponse": "none",
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "INSURANCE",
+  "currentStatus": "waiting",
+  "deliberatelyMissing": ["amountInr"]
+}

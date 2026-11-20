@@ -1,0 +1,26 @@
+{
+  "id": "c03-local-shop-hinglish",
+  "lang": "hinglish",
+  "today": "2026-11-20",
+  "story": "Hamare mohalle ki Gupta Electronics dukaan se 2 November ko Rs 9,500 ka geyser liya tha. Teen din mein hi garam paani aana band ho gaya. 10 November ko dukaan pe jaake dikhaya, Gupta ji bole 'company ka mamla hai, hum kuch nahi kar sakte'. Bill aur warranty card dono mere paas hain. Thand shuru ho gayi hai, ab kya karun?",
+  "expected": {
+    "issueSummary": null,
+    "entityName": "Gupta Electronics",
+    "entityType": "seller",
+    "txnType": "purchase",
+    "problem": "defective",
+    "amountInr": 9500,
+    "txnDate": "2026-11-02",
+    "complainedToEntity": true,
+    "complaintMode": "verbal",
+    "complaintDate": "2026-11-10",
+    "entityResponse": "unsatisfactory",
+    "entityResponseDate": "2026-11-10",
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": null
+  },
+  "track": "CONSUMER",
+  "currentStatus": "do_now",
+  "deliberatelyMissing": []
+}
