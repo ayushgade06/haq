@@ -49,6 +49,31 @@ export const EMPTY_FACTS: Facts = {
   accountType: null,
 };
 
+// ── What /api/extract returns: each fact with the exact story words it came from. ──
+
+export type Extracted<K extends FactKey = FactKey> = {
+  value: NonNullable<Facts[K]>;
+  evidence: string | null; // null only for issueSummary (a summary, not a quote)
+  estimated: boolean; // a relative date ("3 weeks ago") resolved against today
+} | null;
+export type ExtractedFacts = { [K in FactKey]: Extracted<K> };
+
+/** Per-fact provenance kept in the browser alongside the plain facts. */
+export type FactMeta = { evidence: string | null; estimated: boolean; origin: "ai" | "user" };
+export type CaseMeta = Partial<Record<FactKey, FactMeta>>;
+
+export function splitExtracted(x: ExtractedFacts): { facts: Facts; meta: CaseMeta } {
+  const facts = { ...EMPTY_FACTS } as Record<FactKey, unknown>;
+  const meta: CaseMeta = {};
+  for (const k of Object.keys(EMPTY_FACTS) as FactKey[]) {
+    const f = x[k];
+    if (!f) continue;
+    facts[k] = f.value;
+    meta[k] = { evidence: f.evidence, estimated: f.estimated, origin: "ai" };
+  }
+  return { facts: facts as Facts, meta };
+}
+
 // ── Plan: the output of planCase(facts, today). Every Step, Banner and Owed cites a rule. ──
 
 export type Track = "BANKING" | "CONSUMER" | "INSURANCE" | "UNSUPPORTED";

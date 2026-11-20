@@ -1,0 +1,82 @@
+{
+  "id": "card-fraud",
+  "asOf": "2026-11-20",
+  "facts": {
+    "issueSummary": {
+      "value": "A Rs 40,000 credit card transaction on a gaming website, which the cardholder says they never made, was charged by Sahyog Bank.",
+      "evidence": null,
+      "estimated": false
+    },
+    "entityName": {
+      "value": "Sahyog Bank",
+      "evidence": "Sahyog Bank",
+      "estimated": false
+    },
+    "entityType": {
+      "value": "bank",
+      "evidence": "Sahyog Bank",
+      "estimated": false
+    },
+    "txnType": {
+      "value": "card_online",
+      "evidence": "spent on my credit card on a gaming website",
+      "estimated": false
+    },
+    "problem": {
+      "value": "unauthorised",
+      "evidence": "I never made this payment",
+      "estimated": false
+    },
+    "amountInr": {
+      "value": 40000,
+      "evidence": "₹40,000",
+      "estimated": false
+    },
+    "txnDate": {
+      "value": "2026-11-13",
+      "evidence": "On 13 November",
+      "estimated": false
+    },
+    "complainedToEntity": {
+      "value": true,
+      "evidence": "I called customer care on 18 November",
+      "estimated": false
+    },
+    "complaintMode": {
+      "value": "verbal",
+      "evidence": "I called customer care",
+      "estimated": false
+    },
+    "complaintDate": {
+      "value": "2026-11-18",
+      "evidence": "on 18 November",
+      "estimated": false
+    },
+    "entityResponse": {
+      "value": "none",
+      "evidence": "said they'd look into it",
+      "estimated": false
+    },
+    "entityResponseDate": null,
+    "reversed": null,
+    "reversedDate": null,
+    "accountType": {
+      "value": "savings",
+      "evidence": "credit card",
+      "estimated": false
+    }
+  },
+  "dropped": 0,
+  "drafts": {
+    "bank_complaint": {
+      "en": "SUBJECT: Unauthorised online card transaction of ₹40,000 on 13 Nov 2026: request for reversal\n\nDESCRIPTION:\nDear Sir/Madam,\n\nI am writing to formally report an unauthorised transaction on my Sahyog Bank card ending [CARD LAST 4 DIGITS].\n\nOn 13 Nov 2026, ₹40,000 was charged to my card on a gaming website. I did not make or authorise this transaction. I also did not share my card details, OTP or PIN with anyone.\n\nI first reported this to the bank verbally on 18 Nov 2026, within 3 working days of the transaction. I have not received any response so far. I am now putting my complaint in writing.\n\nUnder the RBI circular RBI/2017-18/15 on customer liability, my liability is zero because I reported it within 3 working days. The bank must credit the ₹40,000 back to my account (shadow credit) within 10 working days of my report, that is, by 1 Dec 2026.\n\nPlease treat this as my written complaint under the RBI Integrated Ombudsman Scheme 2026.\n\nRegards,\n[YOUR FULL NAME]\n[REGISTERED MOBILE NUMBER]\n[REGISTERED EMAIL ADDRESS]\n\nRELIEF SOUGHT:\n1. Block my card ending [CARD LAST 4 DIGITS] if it is not already blocked, and issue a new card.\n2. Credit back ₹40,000 (shadow credit) by 1 Dec 2026, as required by the RBI circular RBI/2017-18/15.\n3. Confirm that my liability for this transaction is zero.\n4. Investigate the transaction and share the outcome with me in writing.\n5. Give me a complaint reference number for this written complaint.\n\nDOCUMENTS TO ATTACH:\n- Card statement showing the ₹40,000 transaction on 13 Nov 2026\n- SMS or email alert of the transaction\n- Details of my verbal complaint on 18 Nov 2026 (call record or [EARLIER REFERENCE NUMBER, IF ANY])\n- Copy of photo ID",
+      "hi": "SUBJECT: अनधिकृत कार्ड लेन-देन ₹40,000 (13 नवंबर 2026) – लिखित शिकायत\n\nDESCRIPTION:\nप्रिय महोदय/महोदया,\n\n13 नवंबर 2026 को मेरे Sahyog Bank कार्ड (अंतिम 4 अंक [CARD LAST 4 DIGITS]) से एक गेमिंग वेबसाइट पर ₹40,000 का लेन-देन हुआ। यह लेन-देन मैंने नहीं किया। मैंने इसकी अनुमति भी नहीं दी।\n\nमैंने 18 नवंबर 2026 को बैंक को मौखिक रूप से इसकी सूचना दी थी। यह सूचना तीसरे कार्य-दिवस पर दी गई थी। अब तक बैंक से कोई जवाब नहीं मिला है। इसलिए यह शिकायत अब लिखित में भेजी जा रही है।\n\n\"RBI circular RBI/2017-18/15 on customer liability\" के अनुसार यह नियम 1 जनवरी 2027 से पहले के अनधिकृत लेन-देन पर लागू होता है। अगर धोखाधड़ी किसी और ने की हो, तो ग्राहक को कोई नुकसान नहीं उठाना पड़ता। इसके लिए शर्त है कि ग्राहक बैंक के अलर्ट के 3 कार्य-दिवस के भीतर सूचना दे। इसलिए इस मामले में मेरी देनदारी शून्य है।\n\nइस हिसाब से बैंक को सूचना के 10 कार्य-दिवस के भीतर ₹40,000 वापस जमा करने हैं (\"शैडो क्रेडिट\")। यह तारीख 1 दिसंबर 2026 है।\n\n\"RBI Integrated Ombudsman Scheme 2026\" के अनुसार मैं यह लिखित शिकायत अपने रिकॉर्ड के लिए भी रख रहा/रही हूँ।\n\nधन्यवाद,\n[YOUR FULL NAME]\n[REGISTERED MOBILE NUMBER]\n\nRELIEF SOUGHT:\n1. 1 दिसंबर 2026 तक मेरे खाते में ₹40,000 की शैडो क्रेडिट दी जाए।\n2. मामले की जाँच की जाए और राशि स्थायी रूप से वापस की जाए।\n3. इस शिकायत की लिखित पावती और शिकायत संदर्भ नंबर दिया जाए।\n4. अगर कार्ड अभी तक ब्लॉक नहीं हुआ है, तो उसे ब्लॉक किया जाए।\n\nDOCUMENTS TO ATTACH:\n- कार्ड स्टेटमेंट, जिसमें ₹40,000 का लेन-देन दिखे\n- लेन-देन का बैंक SMS/ईमेल अलर्ट (स्क्रीनशॉट)\n- 18 नवंबर 2026 की मौखिक शिकायत का विवरण, जैसे कॉल का समय या कॉल लॉग [IF AVAILABLE]"
+    },
+    "consumer_commission": {
+      "en": "SUBJECT: Complaint against Sahyog Bank over an unauthorised ₹40,000 credit card transaction\n\nDESCRIPTION:\nI am [YOUR FULL NAME], a customer of Sahyog Bank. My card ends in [CARD LAST 4 DIGITS].\n\nOn 13 Nov 2026, Sahyog Bank charged ₹40,000 to my credit card for an online transaction on a gaming website. I did not make this transaction or authorise it.\n\nOn 18 Nov 2026, I reported it to the bank verbally. This was within 3 working days. The bank has not responded.\n\nUnder RBI circular RBI/2017-18/15 on customer liability, my liability is zero, because I reported within 3 working days. The bank had to credit ₹40,000 back to me by 1 Dec 2026, 10 working days after my report. As on [DATE OF FILING], I have not received this credit.\n\nI am filing within the time allowed by section 69 of the Consumer Protection Act 2019. The amount involved is ₹40,000. So this District Commission can hear the case under the Consumer Protection (Jurisdiction) Rules 2021, G.S.R. 912(E). Under notification G.S.R. 606(E), 2023, no filing fee applies.\n\nRELIEF SOUGHT:\n1. Direct Sahyog Bank to credit ₹40,000 back to my card account.\n2. Direct the bank to confirm in writing that my liability is zero.\n3. Direct the bank to reverse any interest or charges it has levied on this amount.\n4. Any other relief the Commission finds fit, including costs.\n\nDOCUMENTS TO ATTACH:\n- Card statement showing the ₹40,000 transaction on 13 Nov 2026\n- The bank's transaction alert (SMS or email)\n- Note of my verbal complaint on 18 Nov 2026: time, branch or phone number, and the staff name, if known\n- Identity proof\n- Any later messages from the bank"
+    },
+    "rbi_ombudsman": {
+      "en": "SUBJECT: Unauthorised ₹40,000 online card transaction by Sahyog Bank: no reply or credit\n\nDESCRIPTION:\nI am [YOUR FULL NAME], a customer of Sahyog Bank. My card ending [CARD LAST 4 DIGITS] was charged ₹40,000 on 13 Nov 2026 on a gaming website. I did not make or approve this transaction.\n\nI reported it to the bank on 18 Nov 2026, within 3 working days. I complained in writing on [DATE OF WRITTEN COMPLAINT], reference [COMPLAINT REFERENCE NUMBER]. I have had no reply.\n\nUnder RBI circular RBI/2017-18/15 on customer liability, I am not liable for this fraud because I reported it within 3 working days. My liability is zero. The bank had to credit back ₹40,000 (a shadow credit) by 1 Dec 2026, 10 working days after my report. As of [DATE OF FILING], I have not received this credit.\n\nI complained to the bank first and waited 30 days, as the RBI Integrated Ombudsman Scheme 2026 requires. This matter is not before any court, tribunal, arbitrator or other Ombudsman.\n\nRELIEF SOUGHT:\n1. Direct Sahyog Bank to credit back ₹40,000 in full.\n2. Confirm my liability is zero under RBI circular RBI/2017-18/15.\n3. Reverse any interest, fees or charges linked to this transaction.\n4. Award compensation for my lost time, expenses and harassment, as the Ombudsman thinks fit, under the RBI Integrated Ombudsman Scheme 2026.\n\nDOCUMENTS TO ATTACH:\n- Card statement showing the ₹40,000 charge on 13 Nov 2026\n- The bank's transaction alert (SMS/email)\n- Copy of my written complaint to Sahyog Bank, with proof it was sent or received (needed before filing)\n- Any call record or reference from my 18 Nov 2026 report\n- Identity proof"
+    }
+  }
+}

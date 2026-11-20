@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "test": "vitest run"
+    "test": "vitest run",
+    "eval": "vitest run --config vitest.scripts.mts evals/run.ts",
+    "samples": "vitest run --config vitest.scripts.mts scripts/precompute-samples.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^1.12.0",
