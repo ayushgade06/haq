@@ -62,6 +62,7 @@ export function CaseView() {
   useEffect(() => {
     const load = () => setState(fromHash());
     load();
+    window.scrollTo(0, 0); // arriving from the landing page's story box, start at the top
     window.addEventListener("hashchange", load);
     return () => window.removeEventListener("hashchange", load);
   }, []);
@@ -182,13 +183,15 @@ export function CaseView() {
                   <h2 id="route-title" className="text-[1.25rem] font-semibold">
                     Your route
                   </h2>
-                  <p className="text-[0.82rem] text-muted-foreground">Working days skip Sundays and 2nd and 4th Saturdays; allow for bank holidays.</p>
+                  {plan.fraud?.regime === "2017" && (
+                    <p className="text-[0.82rem] text-muted-foreground">Working days skip Sundays and 2nd and 4th Saturdays; allow for bank holidays.</p>
+                  )}
                 </div>
                 <p className="mb-4 rounded-lg bg-muted px-3 py-2 text-[0.85rem]">
                   <strong className="font-semibold">{NOT_ADVICE}</strong>{" "}
                   {plan.track === "BANKING" && (
                     <>
-                      The <Term k="RBI" /> <Term k="Ombudsman" /> is free and needs no lawyer.
+                      The <Term k="RBI" /> <Term k="Ombudsman" /> takes complaints directly from you.
                     </>
                   )}
                   {plan.track === "CONSUMER" && (
