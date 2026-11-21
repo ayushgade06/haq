@@ -4,7 +4,7 @@
 
 Tell Haq what went wrong with your bank, payment app, online shop or insurer, in Hindi, English or Hinglish. It works out **where to complain, whether you're allowed to yet, the last day to file, and what the rules say you're owed**, then writes the complaint for you to file.
 
-**Live demo:** _add after deploy_ · **Video:** _add after upload_ · Built for the Creators AI Winter Challenge 2026.
+**Live demo: [haq-delta.vercel.app](https://haq-delta.vercel.app)** (click a sample: no sign-up, opens instantly) · **Video:** _coming soon_ · Built for the Creators AI Winter Challenge 2026.
 
 ![Landing page: the headline and Sunita's route](docs/screenshots/landing.jpg)
 
@@ -41,7 +41,7 @@ It covers three areas: **banking and payments** (RBI Integrated Ombudsman Scheme
 - **Locally**, in 3 commands (Node 22+):
 
 ```bash
-git clone <this repo> haq && cd haq
+git clone https://github.com/ayushgade06/haq.git && cd haq
 npm install
 npm run dev          # http://localhost:3000; samples work without a key
 ```
