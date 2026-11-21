@@ -39,7 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           Skip to content
         </a>
         <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <Link href="/" className="group flex items-baseline gap-2 rounded-md" aria-label="Haq home">
+          <Link href="/" className="group flex items-baseline gap-2 rounded-md">
             <span className="display text-2xl font-[750] text-primary">Haq</span>
             <span lang="hi" className="text-base text-muted-foreground">हक़</span>
           </Link>

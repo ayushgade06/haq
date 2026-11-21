@@ -105,7 +105,7 @@ export function FactsCard({
           What Haq understood
         </h2>
         <p className="mt-0.5 text-[0.85rem] text-muted-foreground">
-          Check each fact. Change anything that's wrong and the plan updates instantly.
+          Check each fact. Change anything that&apos;s wrong and the plan updates instantly.
         </p>
       </header>
       <dl className="divide-y">

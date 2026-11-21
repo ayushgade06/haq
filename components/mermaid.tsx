@@ -25,10 +25,10 @@ await m.run({ querySelector: "#m-${id}" });`;
   }, [id]);
   return (
     <figure className="overflow-x-auto rounded-2xl border bg-card p-4 sm:p-6">
-      <pre id={`m-${id}`} className="mermaid min-w-[36rem] text-[0.8rem] text-muted-foreground" aria-label={label}>
+      <pre id={`m-${id}`} className="mermaid min-w-[36rem] text-[0.8rem] text-muted-foreground">
         {chart}
       </pre>
-      <figcaption className="sr-only">{label}</figcaption>
+      <figcaption className="mt-2 text-[0.8rem] text-muted-foreground">{label}</figcaption>
     </figure>
   );
 }

@@ -2,13 +2,14 @@
 
 import { Mic, MicOff } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState, useSyncExternalStore } from "react";
 import { ExtractProgress } from "@/components/extract-progress";
 import { Button } from "@/components/ui/button";
 import { localToday, saveCase } from "@/lib/case-state";
 import { splitExtracted, type ExtractedFacts } from "@/lib/schema";
 import { cn } from "@/lib/utils";
 
+const noop = () => () => {};
 const MIN = 20;
 const MAX = 2000;
 
@@ -45,12 +46,12 @@ export function StoryInput({ paused }: { paused: boolean }) {
   const [story, setStory] = useState("");
   const [error, setError] = useState<string | null>(paused ? ERRORS.PAUSED : null);
   const [stage, setStage] = useState<number | null>(null);
-  const [canSpeak, setCanSpeak] = useState(false);
+  // false on the server, real support check in the browser
+  const canSpeak = useSyncExternalStore(noop, () => !!getRecognition(), () => false);
   const [listening, setListening] = useState(false);
   const [speechLang, setSpeechLang] = useState<"hi-IN" | "en-IN">("hi-IN");
   const rec = useRef<Recognition | null>(null);
 
-  useEffect(() => setCanSpeak(!!getRecognition()), []);
 
   function toggleMic() {
     if (listening) return rec.current?.stop();

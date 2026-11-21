@@ -53,19 +53,19 @@ export function DraftPanel({
   sampleDrafts: Record<string, { en?: string; hi?: string }> | null;
 }) {
   const [lang, setLang] = useState<Lang>("en");
-  const [state, setState] = useState<State>({ kind: "idle" });
   const abort = useRef<AbortController | null>(null);
   const step = plan.steps.find((s) => s.id === stepId) ?? plan.steps[0];
   const draftable = plan.steps.filter((s) => s.status !== "done" && s.status !== "closed");
   const precomputed = step ? sampleDrafts?.[step.id]?.[lang] : undefined;
 
-  // A new step, language or set of facts starts fresh (precomputed sample drafts show at once).
-  const factsKey = JSON.stringify(facts);
-  useEffect(() => {
-    abort.current?.abort();
-    setState(precomputed ? { kind: "ready", text: precomputed, from: "sample" } : { kind: "idle" });
-  }, [step?.id, lang, factsKey, precomputed]);
-  useEffect(() => () => abort.current?.abort(), []);
+  // State is keyed by step, language and facts: any change starts fresh (precomputed sample drafts show at
+  // once), and late chunks from an old request land under the old key and are ignored.
+  const key = `${step?.id}|${lang}|${JSON.stringify(facts)}`;
+  const [saved, setSaved] = useState<{ key: string; s: State } | null>(null);
+  const state: State =
+    saved?.key === key ? saved.s : precomputed ? { kind: "ready", text: precomputed, from: "sample" } : { kind: "idle" };
+  const setState = (s: State) => setSaved({ key, s });
+  useEffect(() => () => abort.current?.abort(), [key]);
 
   if (!step) return null;
 
