@@ -180,7 +180,8 @@ Disclosed under the challenge rules (§4).
 
 - **At runtime:** Claude Opus 5.5 via the Anthropic API makes two calls per case: extraction and drafting. Everything else, including routing, eligibility, dates, money and the facts card, is deterministic code.
 - **During development:** this repository was written with substantial help from an AI coding assistant (Claude Code), working from our product and rules blueprint. That covers the code, tests, the 20 eval stories and these docs.
-- **What we checked ourselves:** we chose the problem and scope, researched the rule values and their official sources, and set the binding test cases. We reviewed the generated code, and the rules engine is pinned by 80+ dated unit tests. The eval stories were reviewed against the labelling guide, and we tested the app by hand on desktop and at 360 px.
+- **Where the decisions came from:** the problem, scope, rule values with their official sources, and the binding test cases come from our product and rules blueprint, which was itself prepared with AI-assisted research. Only rule values marked verified (V) or source-quoted (S) in that blueprint ship.
+- **How it was checked:** the rules engine is pinned by 80+ dated unit tests, including the blueprint's required cases. Extraction is measured by the 20-story eval above. The app was exercised end to end in a browser (live extraction and drafting, samples-only mode, 360 px layout) and audited with Lighthouse.
 
 ## Limitations and what's next
 

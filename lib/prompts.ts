@@ -58,7 +58,7 @@ Fact names and values:
 - entityResponseDate: date of that answer.
 - reversed: "true" if the disputed money came back (reversed, refunded, credited); "false" if the story says it hasn't.
 - reversedDate: date the money came back.
-- accountType: only when the story names the account type. bsbd = basic savings, Jan Dhan or zero-balance account. savings = savings account, wallet, prepaid card, or credit card. other = current or business account.
+- accountType: only when the story explicitly names the kind of account or card. A bank's name, or the words "my account", is not an account type: leave it out. bsbd = basic savings, Jan Dhan or zero-balance account. savings = savings account, wallet, prepaid card, or credit card. other = current or business account.
 
 Dates are YYYY-MM-DD. Today's date is given. Resolve relative dates against today and set estimated to true. If a date has a day and month but no year, use the most recent such date on or before today (estimated false). Never return a date after today.
 
